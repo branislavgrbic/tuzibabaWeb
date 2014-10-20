@@ -402,7 +402,7 @@ ul.grid-nav li a.active {
 </div>
 <!-- INPUT FORM -->
 <div class="container" >
-	<form id="form" class="form-horizontal" action="http://178.148.111.25/WebImageUpload_bacjyop.php" method="post" enctype="multipart/form-data" >
+	<form id="form" class="form-horizontal" action="http://tuzibaba.azurewebsites.net/Tuzibaba/WebContent/WebImageUpload_bacjyop.php" method="post" enctype="multipart/form-data" >
  		<div class="form-group">
             <label class="control-label col-xs-3">Kategorija problema:</label>   
             <div class="col-xs-9">
@@ -483,7 +483,7 @@ ul.grid-nav li a.active {
 	*/
 	
 	$.ajax({
-		  url: 'http://178.148.111.25/getAllCustomersStatus0.php',
+		  url: 'http://tuzibaba.azurewebsites.net/Tuzibaba/WebContent/getAllCustomersStatus0.php',
 		  success: function(data) {
 		   $('.result').html(data);	 
 		   init0(data);
@@ -492,7 +492,7 @@ ul.grid-nav li a.active {
 		  
 		});
 	$.ajax({
-		  url: 'http://178.148.111.25/getAllCustomersStatus1.php',
+		  url: 'http://tuzibaba.azurewebsites.net/Tuzibaba/WebContent/getAllCustomersStatus1.php',
 		  success: function(data1) {
 		   $('.result').html(data1);	 
 		   init(data1);
@@ -503,7 +503,7 @@ ul.grid-nav li a.active {
 		  
 		});
 	$.ajax({
-		  url: 'http://178.148.111.25/getAllCustomersStatus2.php',
+		  url: 'http://tuzibaba.azurewebsites.net/Tuzibaba/WebContent/getAllCustomersStatus2.php',
 		  success: function(data2) {
 		   $('.result').html(data2);	 
 		   init2(data2);
@@ -581,7 +581,7 @@ function addToDB()
 	var image = document.getElementById("imageUpload");
 	alert(image.name);
 	console.log("addToDB test");
-	var server = 'http://178.148.111.25/insertInto.php?name=t&surname=t&latitude=0&longitude=0'
+	var server = 'http://tuzibaba.azurewebsites.net/Tuzibaba/WebContent/insertInto.php?name=t&surname=t&latitude=0&longitude=0'
 	$.ajax({
 		  url: server ,
 		  success: function(report_ID) {
@@ -594,7 +594,7 @@ function addToDB()
 function uploadImage(report_ID)
 
 {
-	var server = 'http://178.148.111.25/WebImageUpload.php?uploadFile=' +'x' +'&name=test'
+	var server = 'http://tuzibaba.azurewebsites.net/Tuzibaba/WebContent/WebImageUpload.php?uploadFile=' +'x' +'&name=test'
 		$.ajax({
 			  url: server ,
 			  success: function(report_ID) {
