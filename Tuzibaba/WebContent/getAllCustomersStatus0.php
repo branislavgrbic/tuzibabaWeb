@@ -1,6 +1,6 @@
 <?php
 		header("Access-Control-Allow-Origin: *");
-		$con = $con = mysql_connect("localhost","root","");
+		$con = $con = mysql_connect("178.148.111.25","root","");
 		if (!$con)
 		{
 			die('Could not connect: ' . mysql_error());
